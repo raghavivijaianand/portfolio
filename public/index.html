@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home">Your Name</a>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <h1>I build web apps<br>from database to browser.</h1>
+    <p>Full-stack developer intern. Edit this text with your own intro.</p>
+    <a class="btn" href="#projects">See my projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Write 2-3 lines about yourself, your college, and what you are learning.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Git</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="projectList" class="grid"><p>Loading projects...</p></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input name="name" placeholder="Your name" required>
+      <input name="email" type="email" placeholder="Your email" required>
+      <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>&copy; <span id="year"></span> Your Name</footer>
+<script src="script.js"></script>
+</body>
+</html>

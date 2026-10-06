@@ -1,0 +1,31 @@
+:root{--bg:#f6f7f2;--ink:#17211b;--muted:#5d6b62;--accent:#1f6f5c;--card:#fff;--line:#d9ded4}
+@media (prefers-color-scheme:dark){:root{--bg:#121816;--ink:#eaf0ea;--muted:#9aa89f;--accent:#5fc2a5;--card:#1a221f;--line:#2a3530}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Fraunces,Georgia,serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:1rem 6vw;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.nav a{text-decoration:none;color:var(--ink);margin-left:1.4rem}
+.nav .logo{font-weight:800;margin:0;font-size:1.2rem}
+section{padding:4rem 6vw;max-width:1100px;margin:auto}
+.hero{padding-top:6rem}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.08;font-weight:800;max-width:16ch;margin:0 0 1.2rem}
+.hero p{max-width:55ch;color:var(--muted)}
+h2{font-size:2rem;margin:0 0 1.5rem}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:.75rem 1.4rem;border:0;border-radius:6px;font:500 1rem Inter,sans-serif;text-decoration:none;cursor:pointer;margin-top:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem}
+.card h3{margin:0 0 .4rem}.card p{margin:0 0 1rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+.tags span{font-size:.8rem;border:1px solid var(--line);border-radius:99px;padding:.1rem .6rem}
+.card a{margin-right:1rem}
+.skills{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.skills li{background:var(--card);border:1px solid var(--line);padding:.4rem 1rem;border-radius:99px}
+form{display:grid;gap:1rem;max-width:520px}
+label{display:grid;gap:.3rem;font-weight:500}
+input,textarea{padding:.7rem;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+.muted{color:var(--muted)}
+footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:560px){.nav nav a{margin-left:.8rem}}
